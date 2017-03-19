@@ -10,10 +10,13 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    childprocess (0.6.2)
+      ffi (~> 1.0, >= 1.0.11)
     cliver (0.3.2)
     coderay (1.1.1)
     domain_name (0.5.20170223)
       unf (>= 0.0.5, < 1.0.0)
+    ffi (1.9.18)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     mechanize (2.7.5)
@@ -35,7 +38,6 @@ GEM
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     ntlm-http (0.1.1)
-    phantomjs (2.1.1.0)
     poltergeist (1.14.0)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
@@ -48,11 +50,19 @@ GEM
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rubyzip (1.2.1)
+    selenium-webdriver (3.3.0)
+      childprocess (~> 0.5)
+      rubyzip (~> 1.0)
+      websocket (~> 1.0)
     slop (3.6.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
+    watir (6.2.0)
+      selenium-webdriver (~> 3.0)
     webrobots (0.1.2)
+    websocket (1.2.4)
     websocket-driver (0.6.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
@@ -65,9 +75,9 @@ PLATFORMS
 DEPENDENCIES
   capybara
   mechanize
-  phantomjs
   poltergeist
   pry
+  watir
 
 BUNDLED WITH
-   1.12.5
+   1.14.3

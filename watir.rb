@@ -36,6 +36,10 @@ class Scraper
         text = row.cells.map {|cell| cell.text}
         csv << text
       end
+        @browser.table(:id, "ctl00_cphMain_lrrgResults_cgvResults").rows(:class, "GridView_AlternateRow").each do |row|
+        text = row.cells.map {|cell| cell.text}
+        csv << text
+      end
     end
     next_page
   end
